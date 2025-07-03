@@ -23,11 +23,14 @@ let groupByCategory = computed(() => {
     }
 
     // Сортируем услуги внутри каждой категории по названию
-    for (const group of result) {
-        group["Услуги"].sort((a, b) => {
-            return a["Название"].localeCompare(b["Название"], "ru", { sensitivity: "base" });
-        });
-    }
+   for (const group of result) {
+    group["Услуги"].sort((a, b) => {
+        if (b["Ценаот"] !== a["Ценаот"]) {
+            return b["Ценаот"] - a["Ценаот"]; // по убыванию цены
+        }
+        return a["Название"].localeCompare(b["Название"], "ru", { sensitivity: "base" }); // по алфавиту
+    });
+}
 
     return result;
 })
@@ -61,8 +64,7 @@ onMounted(async () => {
                                                 {{ service.Название
                                                 }}
                                             </v-col>
-                                            <v-col cols="3"
-                                                class="d-flex align-center justify-center">
+                                            <v-col cols="3" class="d-flex align-center justify-center">
                                                 <b>{{ service.Ценаот.toLocaleString('ru-RU') }} &#8381;</b>
                                             </v-col>
                                         </v-row>
@@ -81,7 +83,7 @@ onMounted(async () => {
 
 
 
-                      
+
 
                     </v-row>
                 </v-container>

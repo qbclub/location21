@@ -5,10 +5,10 @@ const coords = [
     name: 'Максима Горького, 21',
     position: [58.010374, 56.246932],
   },
-  {
-    name: 'Ленина, 20',
-    position: [58.010057, 56.234101],
-  },
+  // {
+  //   name: 'Ленина, 20',
+  //   position: [58.010057, 56.234101],
+  // },
 ]
 
 const initMap = () => {
@@ -22,7 +22,7 @@ const initMap = () => {
   }
 )
   map.behaviors.disable([
-    // 'scrollZoom',    
+    'scrollZoom',    
     'dblClickZoom',  
     // 'multiTouch', 
     // 'drag',    
@@ -30,7 +30,7 @@ const initMap = () => {
   ])
   if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
   map.behaviors.disable('drag')
-  map.behaviors.disable('scrollZoom')
+  // map.behaviors.disable('scrollZoom')
 }
 
   map.setType('yandex#map')

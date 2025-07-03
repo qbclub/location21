@@ -6,8 +6,9 @@ import { NuxtLink } from '#components';
 <template>
     <div>
         <BgVideo />
+         <WorkingHours />
         <Services />
-        <WorkingHours />
+       
         <Place />
         <Bottom />
 
