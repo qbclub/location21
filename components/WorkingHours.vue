@@ -50,11 +50,11 @@ onMounted(() => {
             <v-divider color="accent" opacity="1" :thickness="5">
 
             </v-divider>
-            <div style="font-size: 48px; font-weight: 900;">
+            <div style="font-size: clamp(2.25rem, 1.3125rem + 3vw, 3rem); font-weight: 900;">
                 c 9.00 до 21.00
             </div>
             <v-divider class="ma-2"></v-divider>
-            <div style="font-size: 36px; font-weight: 700; " ref="phone">
+            <div style="font-size: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem); font-weight: 700; " ref="phone">
                 <a style="color: black;" href="tel:+7 (999) 282-21-21"> +7 (999) 282-21-21</a>
 
             </div>

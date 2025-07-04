@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "vuetify-nuxt-module",
     "@vite-pwa/nuxt",
     "@vite-pwa/nuxt",
+    "vue3-carousel-nuxt",
   ],
   css: ["@/assets/styles/main.css"],
   ssr: true,

@@ -1,9 +1,7 @@
 <template>
-    <v-sheet color="background" class="pa-10" style="min-height: 200px;">
-        <div class="text-center">
-            контакты и еще
-        </div>
-
-    </v-sheet>
-
+    <div  class="pa-10" style="min-height: 200px; background: rgb(20, 20, 20); color: white;">
+         <div class="text-center">
+                контакты и еще
+            </div>
+    </div>
 </template>

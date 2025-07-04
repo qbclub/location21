@@ -3,7 +3,7 @@
 const coords = [
   {
     name: 'Максима Горького, 21',
-    position: [58.010374, 56.246932],
+    position: [58.014460, 56.252809],
   },
   // {
   //   name: 'Ленина, 20',
@@ -13,25 +13,25 @@ const coords = [
 
 const initMap = () => {
   const map = new ymaps.Map('map', {
-    center: [58.0102, 56.2405], 
+    center: [58.0102, 56.2405],
     zoom: 14,
-    // controls: ['zoomControl'], 
+    controls: ['zoomControl'],
   },
-   {
-    suppressMapOpenBlock: true, // Убираем ссылку "Открыть в Яндекс.Картах"
-  }
-)
+    {
+      suppressMapOpenBlock: true, // Убираем ссылку "Открыть в Яндекс.Картах"
+    }
+  )
   map.behaviors.disable([
-    'scrollZoom',    
-    'dblClickZoom',  
+    'scrollZoom',
+    'dblClickZoom',
     // 'multiTouch', 
     // 'drag',    
-             
+
   ])
   if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-  map.behaviors.disable('drag')
-  // map.behaviors.disable('scrollZoom')
-}
+    map.behaviors.disable('drag')
+    // map.behaviors.disable('scrollZoom')
+  }
 
   map.setType('yandex#map')
   map.options.set('mapAutoFocus', false)
@@ -67,6 +67,31 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="text-center">Пермь, Максима Горького, 21 / Пермь, Ленина, 20</div>
-  <div id="map" style="width: 100%; height: 400px; filter: grayscale(1);"></div>
+  <v-row class="pt-md-8 pb-md-8 ma-0"  style="background:rgb(20, 20, 20);">
+    <v-col cols="12" md="4">
+      <div class="justify-center align-start align-md-center d-flex text-center  h-100">
+
+        <div ref="card" class="card">
+
+          <v-divider color="accent" opacity="1" :thickness="5">
+
+          </v-divider>
+
+
+          <div style="font-size: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem); font-weight: 900; color: white; " ref="phone">
+            Пермь <br> Максима Горького <br>
+            21
+          </div>
+
+
+
+        </div>
+      </div>
+    </v-col>
+    <v-col cols="12" md="8">
+      <div id="map" style=" width: 100%; height: 400px; filter: grayscale(1); "></div>
+    </v-col>
+  </v-row>
+
+
 </template>

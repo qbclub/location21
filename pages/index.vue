@@ -1,14 +1,15 @@
 <script>
 import { NuxtLink } from '#components';
+import Gallery from '~/components/Gallery.vue';
 
 
 </script>
 <template>
     <div>
         <BgVideo />
-         <WorkingHours />
+        <WorkingHours />
         <Services />
-       
+        <Gallery />
         <Place />
         <Bottom />
 
