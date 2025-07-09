@@ -143,7 +143,8 @@ function submit() {
 </script>
 <template>
   <ClientOnly>
-    <v-stepper v-model="currentStep" :items="stepperItems" next-text="далее" prev-text="назад" mobile>
+    <v-stepper v-model="currentStep" :items="stepperItems" next-text="далее" prev-text="назад" mobile bg-color="#202020"
+      theme="myCustomDarkTheme">
       <!-- 2. Обновляем шаблон, чтобы использовать .display для текста и .value для ключа -->
       <template v-slot:item.1>
         <v-sheet>

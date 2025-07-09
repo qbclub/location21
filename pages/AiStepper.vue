@@ -128,18 +128,16 @@ async function copy(cropDescription: string) {
 <template>
   <v-container>
     <v-row class="d-flex justify-center">
-      <v-col cols="12" md="10" xl="8" class="d-flex justify-center align-center flex-column">
+      <v-col cols="12" md="7" xl="5" class="d-flex justify-center align-center flex-column">
         <PromptStepper @submit="submit" v-if="formStatus == 'filling'"></PromptStepper>
 
         <div v-else-if="formStatus == 'submitted'">
-          <FallingStarsBg :color="'#555'" />
-          <div class="z-[1]">
-          </div>
+          <v-progress-circular indeterminate color="primary" size="large"></v-progress-circular>
         </div>
         <div v-else-if="formStatus == 'finished'" class="d-flex justify-center flex-column">
           <v-row>
             <v-col v-for="(crop, index) of aiResponse" :key="index" cols="12">
-              <v-card class="w-100">
+              <v-card class="w-100" theme="myCustomDarkTheme">
                 <v-col cols="12">
                   <div class="ai-response-text" v-text="crop.description"></div>
                 </v-col>
@@ -161,12 +159,12 @@ async function copy(cropDescription: string) {
           <NuxtLink to="https://n962263.yclients.com/company/894109/personal/menu?o=" class="w-100">
             <v-btn class="mt-10 w-100" color="accent" size="x-large">записаться</v-btn>
           </NuxtLink>
-          <v-btn class="mt-5 mb-0" @click="goToFormBeginning" size="small">понял, на главную</v-btn>
+          <v-btn class="mt-5 mb-0" @click="goToFormBeginning" size="small" color="secondary">понял, на главную</v-btn>
         </div>
       </v-col>
     </v-row>
 
-    <v-dialog v-model="copyResultDialog" width="auto">
+    <v-dialog v-model="copyResultDialog" width="auto" theme="myCustomDarkTheme">
       <v-card prepend-icon="mdi-check-circle-outline" title="Скопировано!">
         <v-card-text>
           <p class="text-sm text-center mt-4">Вставьте текст в <b>комментарий</b> к записи</p>
