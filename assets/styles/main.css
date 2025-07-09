@@ -4,6 +4,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: white;
 }
 .lets-go-button {
   animation: pulse 2s infinite ease-in-out;
@@ -17,4 +18,7 @@ a {
   60% {
     transform: scale(1.1);
   }
+}
+.v-expansion-panel-text__wrapper{
+    padding: 8px !important;
 }

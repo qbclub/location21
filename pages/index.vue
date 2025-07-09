@@ -9,15 +9,18 @@ import Gallery from '~/components/Gallery.vue';
         <BgVideo />
         <WorkingHours />
         <Services />
+        <v-divider :thickness="5" class="border-opacity-100 " color="white"></v-divider>
+        <Ai />
         <Gallery />
         <Place />
         <Bottom />
 
         <div class="pa-10 text-center d-flex justify-center"
-            style="position: fixed; bottom: 0px; z-index: 100; width: 100%;">
+            style="position: fixed; bottom: 0px; z-index: 100; width: 100%; pointer-events: none;">
             <div>
                 <NuxtLink to="https://n962263.yclients.com/company/894109/personal/menu?o=">
-                    <v-btn class="lets-go-button" size="large" color="accent">Записаться</v-btn>
+                    <v-btn class="lets-go-button" style="pointer-events: auto;" size="large"
+                        color="accent">Записаться</v-btn>
                 </NuxtLink>
 
             </div>

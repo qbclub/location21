@@ -1,9 +1,52 @@
 <script setup>
+import photo1 from '~/assets/images/g_1.jpg'
+import photo2 from '~/assets/images/g_2.jpg'
+import photo3 from '~/assets/images/g_3.jpg'
+import photo4 from '~/assets/images/g_4.jpg'
+import photo5 from '~/assets/images/g_5.jpg'
+import photo6 from '~/assets/images/g_6.jpg'
+import { animate } from 'motion'
 
-const images = Array.from({ length: 10 }, (_, index) => ({
-    id: index + 1,
-    url: `https://picsum.photos/seed/${Math.random()}/800/600`,
-}))
+const imageUrls = [
+    photo1,
+    photo2,
+    photo3,
+    photo4,
+    photo5,
+    photo6,
+]
+
+let images = [
+    {
+        id: 1,
+        url: photo1
+    },
+    {
+        id: 2,
+        url: photo2
+    },
+    {
+        id: 3,
+        url: photo3
+    },
+        {
+        id: 4,
+        url: photo4
+    },
+    {
+        id: 5,
+        url: photo5
+    },
+    {
+        id: 6,
+        url: photo6
+    },
+]
+
+// const images = Array.from({ length: 10 }, (_, index) => ({
+//     id: index + 1,
+//     url: `https://picsum.photos/seed/${Math.random()}/800/600`,
+// }))
 
 const config = {
     height: 500,
@@ -40,20 +83,20 @@ const config = {
 
 
 
-    <v-row class="pt-md-8 pb-md-12 ma-0">
+    <v-row class="pt-md-8 pb-md-8 ma-0">
         <v-col cols="12" md="4">
             <div class="justify-center align-start align-md-center d-flex text-center  h-100">
 
-                <div ref="card" class="card">
-                   
-                            <img src="../assets/images/logo.svg" alt="" style="width: 40%; margin-bottom: 10px;">
-                      
+                <div class="pt-8 pa-2">
+
+                    <img src="../assets/images/logo.svg" alt="" style="width: 40%; margin-bottom: 10px;">
+
                     <v-divider color="accent" opacity="1" :thickness="5">
 
                     </v-divider>
 
 
-                    <div style="font-size: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem); font-weight: 900; " ref="phone">
+                    <div style="font-size: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem); font-weight: 900; ">
                         Получи максимум не переплачивая за бренд
 
                     </div>

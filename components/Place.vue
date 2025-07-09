@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 
 const coords = [
   {
@@ -13,7 +13,7 @@ const coords = [
 
 const initMap = () => {
   const map = new ymaps.Map('map', {
-    center: [58.0102, 56.2405],
+    center: [58.014460, 56.252809],
     zoom: 14,
     controls: ['zoomControl'],
   },
@@ -67,25 +67,18 @@ onMounted(() => {
 </script>
 
 <template>
-  <v-row class="pt-md-8 pb-md-8 ma-0"  style="background:rgb(20, 20, 20);">
-    <v-col cols="12" md="4">
+  <v-row class="pt-md-8 pb-md-8 ma-0" style="background:rgb(20, 20, 20);">
+    <v-col cols="12" md="4" class="pt-8 pb-8">
       <div class="justify-center align-start align-md-center d-flex text-center  h-100">
 
-        <div ref="card" class="card">
-
+        <div style="font-size: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem); font-weight: 900; color: white; " ref="phone">
+          Пермь
           <v-divider color="accent" opacity="1" :thickness="5">
 
           </v-divider>
-
-
-          <div style="font-size: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem); font-weight: 900; color: white; " ref="phone">
-            Пермь <br> Максима Горького <br>
-            21
-          </div>
-
-
-
+          Максима Горького 21
         </div>
+
       </div>
     </v-col>
     <v-col cols="12" md="8">

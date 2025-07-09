@@ -5,7 +5,7 @@ const card = ref(null)
 const phone = ref(null)
 let cardAnimation = () => {
     let animated = false
-    inView(card.value, async(element) => {
+    inView(card.value, async (element) => {
         if (!animated) {
             animated = true
             animate(
@@ -38,30 +38,37 @@ let cardAnimation = () => {
 
 onMounted(() => {
     cardAnimation()
- 
+
 })
 
 </script>
 <template>
 
-    <div class="justify-center d-flex text-center ma-8">
+    <div class="justify-center d-flex text-center ma-8" style="background: white;">
 
         <div ref="card" class="card">
-            <v-divider color="accent" opacity="1" :thickness="5">
 
-            </v-divider>
             <div style="font-size: clamp(2.25rem, 1.3125rem + 3vw, 3rem); font-weight: 900;">
                 c 9.00 до 21.00
             </div>
-            <v-divider class="ma-2"></v-divider>
+            <v-divider color="accent" opacity="1" :thickness="5">
+
+            </v-divider>
             <div style="font-size: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem); font-weight: 700; " ref="phone">
                 <a style="color: black;" href="tel:+7 (999) 282-21-21"> +7 (999) 282-21-21</a>
 
             </div>
 
             <div class="d-flex justify-center mt-2">
-                <img class="ma-2" src="../assets/images/vk.svg" alt="" width="40px">
-                <img class="ma-2" src="../assets/images/telegram.svg" alt="" width="40px">
+                <a href="https://vk.com/location21" target="_blank">
+                    <img class="ma-2" src="../assets/images/vk.svg" alt="" width="40px">
+                </a>
+                <a href="https://t.me/location21perm" target="_blank">
+                    <img class="ma-2" src="../assets/images/telegram.svg" alt="" width="40px">
+                </a>
+                <a href="https://www.instagram.com/location21.perm" target="_blank">
+                    <img class="ma-2" src="../assets/images/instagram.svg" alt="" width="40px">
+                </a>
 
             </div>
 
