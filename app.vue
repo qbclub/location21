@@ -4,24 +4,30 @@ const apiKey = config.public.mapApiKey
 useHead({
   title: "Location 21",
   meta: [
+    // Мета-настройки
     { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' },
-    { name: 'description', content: 'Онлайн-платформа для заказа еды и товаров в магазинах и кафе Глазова.' },
-    { name: 'keywords', content: 'Глазов, доставка, QR-меню, витрина, онлайн-магазин, кафе, ресторан, заказы, товары, меню, еда' },
+    { name: 'description', content: 'Барбершоп Location 21 — мужские стрижки, бритьё и уход за бородой в Перми. Запишитесь онлайн!' },
+    { name: 'keywords', content: 'Пермь, барбершоп, мужская стрижка, борода, бритьё, барберы, салон, уход, парикмахерская' },
     { name: 'theme-color', content: '#ffffff' },
+
+    // Для PWA
     { name: 'mobile-web-app-capable', content: 'yes' },
     { name: 'apple-mobile-web-app-capable', content: 'yes' },
     { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
-    { property: 'og:title', content: 'Location 21' },
-    { property: 'og:description', content: 'Онлайн-платформа для заказа еды и товаров в магазинах и кафе Глазова.' },
+
+    // Open Graph (для соцсетей)
+    { property: 'og:title', content: 'Барбершоп Location 21 | Пермь' },
+    { property: 'og:description', content: 'Мужской барбершоп в Перми. Стиль, комфорт, индивидуальный подход.' },
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://glazovest.ru/' },
-    { property: 'og:image', content: '/apple-touch-icon.png' },
+    { property: 'og:url', content: 'https://location21barbershop.ru/' },
+    { property: 'og:image', content: '/og-image.jpg' }, // Создай это изображение в папке public
+
+    // Twitter Card
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'Location 21' },
-    { name: 'twitter:description', content: 'Приложение для заказа еды, товаров и управления кафе и магазинами в Глазове.' },
-    { name: 'twitter:image', content: '/apple-touch-icon.png' }
+    { name: 'twitter:title', content: 'Барбершоп Location 21' },
+    { name: 'twitter:description', content: 'Профессиональные стрижки и бритьё в Перми. Запишитесь к лучшим барберам.' },
+    { name: 'twitter:image', content: '/og-image.jpg' }
   ],
-  
 
   link: [
 
