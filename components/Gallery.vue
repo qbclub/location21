@@ -5,6 +5,9 @@ import photo3 from '~/assets/images/g_3.jpg'
 import photo4 from '~/assets/images/g_4.jpg'
 import photo5 from '~/assets/images/g_5.jpg'
 import photo6 from '~/assets/images/g_6.jpg'
+import photo7 from '~/assets/images/g_7.jpg'
+import photo8 from '~/assets/images/g_8.jpg'
+import photo9 from '~/assets/images/g_9.jpg'
 import { animate } from 'motion'
 
 const imageUrls = [
@@ -14,6 +17,9 @@ const imageUrls = [
     photo4,
     photo5,
     photo6,
+    photo7,
+    photo8,
+    photo9,
 ]
 
 let images = [
@@ -29,7 +35,7 @@ let images = [
         id: 3,
         url: photo3
     },
-        {
+    {
         id: 4,
         url: photo4
     },
@@ -83,7 +89,7 @@ const config = {
 
 
 
-    <v-row class="pt-md-8 pb-md-8 ma-0">
+    <v-row class="pt-md-8 pb-md-8 ma-0" style="background: white;">
         <v-col cols="12" md="4">
             <div class="justify-center align-start align-md-center d-flex text-center  h-100">
 
@@ -97,7 +103,7 @@ const config = {
 
 
                     <div style="font-size: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem); font-weight: 900; ">
-                        Получи максимум не переплачивая за бренд
+                        Стиль. Забота. Качество.
 
                     </div>
 

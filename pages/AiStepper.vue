@@ -3,6 +3,19 @@ definePageMeta({
   layout: 'pages'
 })
 
+useHead({
+  title: 'Location 21: AI рекомендации',
+  meta: [
+    {
+      name: 'description',
+      content: 'Подбор образа с помощью искусственного интеллекта. Ai рекомендации',
+    },
+    {
+      property: 'Location 21: AI рекомендации',
+      content: 'Подбор образа с помощью искусственного интеллекта. Ai рекомендации',
+    },
+  ],
+})
 import type { PromptForm } from "~/types/prompt-form.interface"
 
 let aiResponse = ref<{ id: string, description: string, images: string[] }[]>([
@@ -156,16 +169,16 @@ async function copy(cropDescription: string) {
             </v-col>
           </v-row>
 
-          <NuxtLink to="https://n962263.yclients.com/company/894109/personal/menu?o=" class="w-100">
+          <!-- <NuxtLink to="https://n962263.yclients.com/company/894109/personal/menu?o=" class="w-100">
             <v-btn class="mt-10 w-100" color="accent" size="x-large">записаться</v-btn>
           </NuxtLink>
-          <v-btn class="mt-5 mb-0" @click="goToFormBeginning" size="small" color="secondary">понял, на главную</v-btn>
+          <v-btn class="mt-5 mb-0" @click="goToFormBeginning" size="small" color="secondary">понял, на главную</v-btn> -->
         </div>
       </v-col>
     </v-row>
 
     <v-dialog v-model="copyResultDialog" width="auto" theme="myCustomDarkTheme">
-      <v-card prepend-icon="mdi-check-circle-outline" title="Скопировано!">
+      <v-card prepend-icon="mdi-check-circle-outline" title="Скопировано!" style="max-height: 90dvh;">
         <v-card-text>
           <p class="text-sm text-center mt-4">Вставьте текст в <b>комментарий</b> к записи</p>
           <div class="d-flex justify-center">

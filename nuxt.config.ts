@@ -6,8 +6,9 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "vuetify-nuxt-module",
     "@vite-pwa/nuxt",
-    "@vite-pwa/nuxt",
     "vue3-carousel-nuxt",
+    "@nuxtjs/sitemap",
+    "@nuxtjs/robots",
   ],
   css: ["@/assets/styles/main.css"],
   ssr: true,
@@ -59,16 +60,22 @@ export default defineNuxtConfig({
               myCustomColor: "#9C27B0",
               background: "rgb(20, 20, 20)",
             },
-          }
+          },
         },
       },
     },
   },
+  site: {
+    url: "process.env.NUXT_SITE_URL",
+    name: "process.env.NUXT_SITE_NAME",
+  },
   pwa: {
     registerType: "autoUpdate",
     workbox: {
-      globDirectory: '.output/public',
-      globPatterns: ['**/*.{js,css,html,ico,png,svg,jpg,jpeg,webp,woff2,webm,json}'],
+      globDirectory: ".output/public",
+      globPatterns: [
+        "**/*.{js,css,html,ico,png,svg,jpg,jpeg,webp,woff2,webm,json}",
+      ],
       cleanupOutdatedCaches: true,
     },
     includeAssets: [

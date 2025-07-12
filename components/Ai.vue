@@ -53,9 +53,9 @@ onMounted(async () => {
 <template>
 
 
-    <v-row style="background: rgb(20, 20, 20); color: white;" class=" ma-0 ">
+    <v-row style="background: rgb(20, 20, 20); color: white;" class=" ma-0 pt-8 pb-8">
 
-        <v-col cols="12" md="4" class="pt-8 pb-8">
+        <v-col cols="12" md="4">
             <div class="justify-center align-start align-md-center d-flex text-center  h-100">
 
                 <div

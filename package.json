@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@nuxt/fonts": "^0.11.4",
+    "@nuxtjs/robots": "^5.4.0",
+    "@nuxtjs/sitemap": "^7.4.3",
     "@vite-pwa/nuxt": "^1.0.4",
     "motion": "^12.23.0",
     "nuxt": "^3.17.5",

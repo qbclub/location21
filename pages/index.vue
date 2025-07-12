@@ -12,6 +12,7 @@ import Gallery from '~/components/Gallery.vue';
         <v-divider :thickness="5" class="border-opacity-100 " color="white"></v-divider>
         <Ai />
         <Gallery />
+        <Slogan/>
         <Place />
         <Bottom />
 

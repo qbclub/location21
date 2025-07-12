@@ -70,15 +70,15 @@ onMounted(() => {
   <v-row class="pt-md-8 pb-md-8 ma-0" style="background:rgb(20, 20, 20);">
     <v-col cols="12" md="4" class="pt-8 pb-8">
       <div class="justify-center align-start align-md-center d-flex text-center  h-100">
+        <a href="https://yandex.ru/maps/?text=Пермь, Максима%20Горького,%2021" target="_blank">
+          <div style="font-size: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem); font-weight: 900; color: white; " ref="phone">
+            Пермь
+            <v-divider color="accent" opacity="1" :thickness="5">
 
-        <div style="font-size: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem); font-weight: 900; color: white; " ref="phone">
-          Пермь
-          <v-divider color="accent" opacity="1" :thickness="5">
-
-          </v-divider>
-          Максима Горького 21
-        </div>
-
+            </v-divider>
+            Максима Горького 21
+          </div>
+        </a>
       </div>
     </v-col>
     <v-col cols="12" md="8">
