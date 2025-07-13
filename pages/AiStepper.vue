@@ -141,6 +141,13 @@ async function copy(cropDescription: string) {
 <template>
   <v-container>
     <v-row class="d-flex justify-center">
+      <v-col cols="12"> 
+      <div
+                    style="font-size: clamp(1.25rem, 0.9375rem + 1vw, 1.5rem); font-weight: 900; color: white; ">
+                    Рекомендации искусственного интеллекта
+                </div>
+
+      </v-col>
       <v-col cols="12" md="7" xl="5" class="d-flex justify-center align-center flex-column">
         <PromptStepper @submit="submit" v-if="formStatus == 'filling'"></PromptStepper>
 

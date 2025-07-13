@@ -19,7 +19,7 @@ import Gallery from '~/components/Gallery.vue';
         <div class="pa-10 text-center d-flex justify-center"
             style="position: fixed; bottom: 0px; z-index: 100; width: 100%; pointer-events: none;">
             <div>
-                <NuxtLink to="https://n962263.yclients.com/company/894109/personal/menu?o=">
+                <NuxtLink to="/signup">
                     <v-btn class="lets-go-button" style="pointer-events: auto;" size="large"
                         color="accent">Записаться</v-btn>
                 </NuxtLink>
