@@ -1,4 +1,6 @@
 <script setup>
+const config = useRuntimeConfig()
+const NUXT_SITE_URL = config.public.NUXT_SITE_URL
 const layout = 'sign'
 useHead({
     title: 'Location 21: запись',
@@ -10,6 +12,12 @@ useHead({
         {
             property: 'Location 21: запись',
             content: 'Запись на услуги Location 21. Выбор услуг, мастера, даты и времени',
+        },
+    ],
+    link: [
+        {
+            rel: 'canonical',
+            href: `${NUXT_SITE_URL}/signup`,
         },
     ],
 })

@@ -1,5 +1,9 @@
 <script setup>
+const config = useRuntimeConfig()
+const NUXT_SITE_URL = config.public.NUXT_SITE_URL
+
 const layout = 'pages'
+
 useHead({
   title: 'Location 21: ИИ рекомендации',
   meta: [
@@ -10,6 +14,12 @@ useHead({
     {
       property: 'Location 21: ИИ рекомендации',
       content: 'Подбор образа с помощью искусственного интеллекта. Ai рекомендации',
+    },
+  ],
+    link: [
+    {
+      rel: 'canonical',
+      href: `${NUXT_SITE_URL}/aipage`,
     },
   ],
 })

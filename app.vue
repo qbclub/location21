@@ -17,7 +17,7 @@ useHead({
 
     // Open Graph (для соцсетей)
     { property: 'og:title', content: 'Барбершоп Location 21 | Пермь' },
-    { property: 'og:description', content: 'Мужской барбершоп в Перми. Стиль, комфорт, индивидуальный подход.' },
+    { property: 'og:description', content: 'Барбершоп в Перми. Барбершоп Location 21 — мужские стрижки, бритьё и уход за бородой. Стиль, комфорт, индивидуальный подход.' },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: 'https://location21barbershop.ru/' },
     { property: 'og:image', content: '/og-image.jpg' }, // Создай это изображение в папке public

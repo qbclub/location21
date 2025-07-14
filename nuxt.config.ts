@@ -16,6 +16,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       mapApiKey: process.env.YA_MAP_API_KEY,
+      NUXT_SITE_URL: process.env.NUXT_SITE_URL,
     },
   },
   fonts: {

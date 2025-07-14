@@ -1,8 +1,17 @@
-<script>
+<script setup>
+const config = useRuntimeConfig()
+const NUXT_SITE_URL = config.public.NUXT_SITE_URL
 import { NuxtLink } from '#components';
 import Gallery from '~/components/Gallery.vue';
-
-
+useHead({
+    link: [
+    {
+      rel: 'canonical',
+      href: NUXT_SITE_URL,
+    },
+  ],
+})
+console.log('NUXT_SITE_URL', NUXT_SITE_URL)
 </script>
 <template>
     <div>
