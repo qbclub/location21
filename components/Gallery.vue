@@ -5,9 +5,9 @@ import photo3 from '~/assets/images/g_3.jpg'
 import photo4 from '~/assets/images/g_4.jpg'
 import photo5 from '~/assets/images/g_5.jpg'
 import photo6 from '~/assets/images/g_6.jpg'
-import photo7 from '~/assets/images/g_7.jpg'
-import photo8 from '~/assets/images/g_8.jpg'
-import photo9 from '~/assets/images/g_9.jpg'
+// import photo7 from '~/assets/images/g_7.jpg'
+// import photo8 from '~/assets/images/g_8.jpg'
+// import photo9 from '~/assets/images/g_9.jpg'
 import { animate } from 'motion'
 
 const imageUrls = [
@@ -17,9 +17,9 @@ const imageUrls = [
     photo4,
     photo5,
     photo6,
-    photo7,
-    photo8,
-    photo9,
+    // photo7,
+    // photo8,
+    // photo9,
 ]
 
 let images = [
@@ -78,7 +78,7 @@ const config = {
         // },
         // 500px and up
         900: {
-            itemsToShow: 2,
+            itemsToShow: 3,
             snapAlign: 'start',
         },
     },
@@ -87,32 +87,8 @@ const config = {
 
 <template>
 
-
-
     <v-row class="pt-md-8 pb-md-8 ma-0" style="background: white;">
-        <v-col cols="12" md="4">
-            <div class="justify-center align-start align-md-center d-flex text-center  h-100">
-
-                <div class="pt-8 pa-2">
-
-                    <img src="../assets/images/logo.svg" alt="" style="width: 40%; margin-bottom: 10px;">
-
-                    <v-divider color="accent" opacity="1" :thickness="5">
-
-                    </v-divider>
-
-
-                    <div style="font-size: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem); font-weight: 900; ">
-                        Стиль. Забота. Качество.
-
-                    </div>
-
-
-
-                </div>
-            </div>
-        </v-col>
-        <v-col cols="12" md="8">
+        <v-col cols="12">
             <ClientOnly>
                 <Carousel v-bind="config">
                     <Slide v-for="image in images" :key="image.id">

@@ -37,7 +37,7 @@ let cardAnimation = () => {
 
 
 onMounted(() => {
-    cardAnimation()
+    // cardAnimation()
 
 })
 
@@ -46,7 +46,7 @@ onMounted(() => {
 
 
 
-        <div class="justify-center d-flex text-center " style="background: white;">
+        <div class="justify-center d-flex text-center pa-8" style="background: white;">
 
             <div ref="card" class="card">
 
@@ -60,10 +60,10 @@ onMounted(() => {
                     <a style="color: black;" href="tel:+7 (999) 282-21-21"> +7 (999) 282-21-21</a>
 
                 </div>
-                 <div style="font-size: clamp(1.125rem, 0.8125rem + 1vw, 1.375rem); font-weight: 500;">
+                 <!-- <div style="font-size: clamp(1.125rem, 0.8125rem + 1vw, 1.375rem); font-weight: 500;">
                     <a style="color: black;" href="https://yandex.ru/maps/?text=Пермь, Максима%20Горького,%2021" target="_blank"> Пермь, Максима Горького, 21</a>
 
-                </div>
+                </div> -->
 
                 <div class="d-flex justify-center mt-2">
                     <a href="https://vk.com/location21" target="_blank">
@@ -84,10 +84,10 @@ onMounted(() => {
 
 </template>
 <style scoped>
-.card {
+/* .card {
     opacity: 0;
     transform: translateX(-100px);
     transition: none;
     padding: 20px;
-}
+} */
 </style>

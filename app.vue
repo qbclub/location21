@@ -79,7 +79,13 @@ useHead({
       type: 'image/png',
       sizes: '180x180',
       href: '/apple-touch-icon.png'
-    }
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '48x48',
+      href: '/favicon-48x48.png',
+    },
   ],
   script: [
     {

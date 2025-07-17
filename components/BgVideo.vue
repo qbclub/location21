@@ -11,19 +11,15 @@
 
     <!-- Контент поверх видео -->
     <div class="overlay-content">
-      <div class="align-center d-flex justify-space-between pa-4 flex-column h-100">
-        <v-row class="justify-center flex-grow-0">
+     
+        <v-row class="justify-center">
           <v-col cols="10" sm="6" md="4">
-            <img src="../assets/images/logo.svg" alt="" style="width: 100%;">
+            <img src="../assets/images/logo.png" alt="" style="width: 100%;">
           </v-col>
         </v-row>
 
-        <!-- <v-row class="justify-center flex-grow-0">
-          <v-col class="pa-16">
-            <v-btn size="large" color="accent">Записаться</v-btn>
-          </v-col>
-        </v-row> -->
-      </div>
+     
+
     </div>
   </div>
 </template>
