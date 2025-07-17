@@ -5,24 +5,25 @@ import { NuxtLink } from '#components';
 import Gallery from '~/components/Gallery.vue';
 useHead({
     link: [
-    {
-      rel: 'canonical',
-      href: NUXT_SITE_URL,
-    },
-  ],
+        {
+            rel: 'canonical',
+            href: NUXT_SITE_URL,
+        },
+    ],
 })
 console.log('NUXT_SITE_URL', NUXT_SITE_URL)
 </script>
 <template>
     <div>
         <BgVideo />
-        <WorkingHours />
+        <Brand />
         <Services />
         <v-divider :thickness="5" class="border-opacity-100 " color="white"></v-divider>
         <Ai />
         <Gallery />
-        <Slogan/>
+        <Slogan />
         <Place />
+        <WorkingHours />
         <Bottom />
 
         <div class="pa-10 text-center d-flex justify-center"
