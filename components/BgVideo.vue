@@ -13,7 +13,7 @@
     <div class="overlay-content">
      
         <v-row class="justify-center">
-          <v-col cols="10" sm="6" md="4">
+          <v-col cols="10" sm="6" md="4" class="pt-16">
             <img src="../assets/images/logo.png" alt="" style="width: 100%;">
           </v-col>
         </v-row>
