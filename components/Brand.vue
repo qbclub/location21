@@ -5,8 +5,8 @@
 
                 <div class="pa-8">
 
-                    <img src="../assets/images/logo.svg" alt=""
-                        style="max-width: 300px; width: 80%; margin-bottom: 10px;">
+                    <img src="../assets/images/logo.png" alt=""
+                        style="max-width: 400px; width: 80%; margin-bottom: 10px;">
 
                     <v-divider color="accent" opacity="1" :thickness="5" width="300px" class="mb-4 mx-auto"></v-divider>
 
