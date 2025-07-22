@@ -61,7 +61,7 @@ onMounted(async () => {
                 <div
                     style="font-size: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem); font-weight: 900; color: white; ">
                     AI рекомендации
-                    <v-divider color="accent" opacity="1" :thickness="5" class="ma-2">
+                    <v-divider color="white" opacity="1" :thickness="5" class="ma-2">
 
                     </v-divider>
                     Подберите новый образ бесплатно

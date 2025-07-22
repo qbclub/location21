@@ -58,8 +58,8 @@ onMounted(async () => {
 </script>
 <template>
 
-    <v-sheet color="background" class="pa-4 pa-md-8">
-        <v-tabs v-model="tab" grow align-tabs="center" color="accent">
+    <v-sheet color="background" class="pl-4 pr-4 pb-4 pa-md-8 pt-md-0">
+        <v-tabs v-model="tab" grow align-tabs="center" >
             <v-tab v-for="category, index in groupByCategory" :value="index"> {{ category.Категория }}</v-tab>
         </v-tabs>
         <v-tabs-window v-model="tab">

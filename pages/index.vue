@@ -18,9 +18,10 @@ console.log('NUXT_SITE_URL', NUXT_SITE_URL)
         <BgVideo />
         <Brand />
         <Services />
-        <v-divider :thickness="5" class="border-opacity-100 " color="white"></v-divider>
-        <Ai />
+        <!-- <v-divider :thickness="5" class="border-opacity-100 " color="white"></v-divider> -->
         <Gallery />
+        <Ai />
+
         <Slogan />
         <Place />
         <WorkingHours />

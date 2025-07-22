@@ -73,7 +73,7 @@ onMounted(() => {
         <a href="https://yandex.ru/maps/?text=Пермь, Максима%20Горького,%2021" target="_blank">
           <div style="font-size: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem); font-weight: 900; color: white; " ref="phone">
             Пермь
-            <v-divider color="accent" opacity="1" :thickness="5">
+            <v-divider color="white" opacity="1" :thickness="5" class="ma-2">
 
             </v-divider>
             Максима Горького 21
@@ -81,8 +81,8 @@ onMounted(() => {
         </a>
       </div>
     </v-col>
-    <v-col cols="12" md="8">
-      <div id="map" style=" width: 100%; height: 400px; filter: grayscale(1); "></div>
+    <v-col cols="12" md="8" class="pa-0">
+      <div id="map" style=" width: 100%; height: 400px;  "></div>
     </v-col>
   </v-row>
 

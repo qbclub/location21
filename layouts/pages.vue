@@ -3,7 +3,7 @@
         <div>
             <v-row class="justify-center flex-grow-0 pa-4">
                 <v-col cols="10" sm="6" md="4">
-                    <img src="../assets/images/white_logo.svg" alt="" style="width: 100%;">
+                    <img src="../assets/images/logo.png" alt="" style="width: 100%;">
                 </v-col>
             </v-row>
             <BackButton />
