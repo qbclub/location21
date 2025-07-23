@@ -2,6 +2,8 @@
 let services = ref([])
 const tab = ref(0)
 let serviceType = ref(["Стрижка"])
+
+
 const groupByCategory = computed(() => {
     const result = [];
     const categoryMap = {};
@@ -53,25 +55,26 @@ const groupByCategory = computed(() => {
 onMounted(async () => {
     const res = await fetch('/services.json')
     services.value = await res.json()
-
+  
 })
 </script>
 <template>
-
     <v-sheet color="background" class="pl-4 pr-4 pb-4 pa-md-8 pt-md-0">
-        <v-tabs v-model="tab" grow align-tabs="center" >
+        <v-tabs v-model="tab" grow align-tabs="center">
             <v-tab v-for="category, index in groupByCategory" :value="index"> {{ category.Категория }}</v-tab>
         </v-tabs>
         <v-tabs-window v-model="tab">
             <v-tabs-window-item v-for="category, index in groupByCategory" :key="index" :value="index">
                 <v-container fluid>
                     <v-row>
-                        <v-col cols="12" v-for="type in category.Типы">
-                            <v-expansion-panels bg-color="background" flat rounded="0" v-model="serviceType"
+                        <v-col cols="12" >
+                            <v-expansion-panels bg-color="background" flat rounded="0" 
+                             v-model="serviceType"
+   
                                 hide-actions multiple>
-                                <v-expansion-panel :value="type.ТипУслуги">
+                                <v-expansion-panel v-for="type in category.Типы" :value="type.ТипУслуги">
                                     <v-row class="justify-center">
-                                        <v-col cols="12" md="6" class="pa-0">
+                                        <v-col cols="12" md="6">
                                             <v-expansion-panel-title
                                                 class="text-body-2 text-md-body-1 d-flex justify-center">
 
@@ -91,7 +94,8 @@ onMounted(async () => {
                                                     <v-expansion-panel>
                                                         <v-expansion-panel-title class="text-body-2 text-md-body-1">
                                                             <v-row>
-                                                                <v-col class="pa-0 d-flex align-center justify-space-between">
+                                                                <v-col
+                                                                    class="pa-0 d-flex align-center justify-space-between">
                                                                     <div>
                                                                         {{ service.Название
                                                                         }}

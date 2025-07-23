@@ -25,7 +25,7 @@ console.log('NUXT_SITE_URL', NUXT_SITE_URL)
         <Slogan />
         <Place />
         <WorkingHours />
-        <Bottom />
+        <!-- <Bottom /> -->
 
         <div class="pa-10 text-center d-flex justify-center"
             style="position: fixed; bottom: 0px; z-index: 100; width: 100%; pointer-events: none;">

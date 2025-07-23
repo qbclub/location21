@@ -7,27 +7,29 @@
 
         <div class="background-photo">
             <img src="../assets/images/background.jpg" class="bg-image" />
-            <v-row class="ma-0">
-                <!-- <v-col cols="12" class="pa-0">
-                    <v-divider :thickness="5" class="border-opacity-100 " color="accent"></v-divider>
-                </v-col> -->
-                <v-col cols="12" md="4" class=" text-parent" >
-                    <div class="text" style="background: rgb(20, 20, 20); color: white;">
+
+            <v-row class="ma-0 fill-height">
+
+                <v-col cols="12" md="4" class="text-parent">
+                    <div class="text d-flex align-center align-md-start">
+
                         Мы уважаем стиль, как
                         Буковский, любим его
                         создавать.
+
+
                     </div>
                 </v-col>
-                <v-col cols="12" md="4" class="text-parent" >
-                    <div class="text" style="background: white;">
+                <v-col cols="12" md="4" class="text-parent
+">
+                    <div class="text d-flex align-center">
                         Мы уважаем вас и хотим
                         окружить домашним
                         уютом.
                     </div>
                 </v-col>
-                <v-col cols="12" md="4" class="text-parent"
-                   >
-                    <div class="text" style="background: rgb(20, 20, 20); color: white;">
+                <v-col cols="12" md="4" class="text-parent">
+                    <div class="text d-flex align-center align-md-end">
                         Мы постоянно
                         самосовершенствуемся,
                         чтобы вопрос качества
@@ -39,36 +41,37 @@
     </div>
 </template>
 <style scoped>
-.text-parent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
 .text {
     font-size: clamp(1.25rem, 0.9375rem + 1vw, 1.5rem);
     font-weight: 900;
     min-height: 150px;
-    padding: 10px;
-    background: red;
+    padding: 30px;
     height: 100%;
     width: 100%;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background: rgba(255, 255, 255, 0.6); */
-
-    /* color: white; */
     text-align: center;
+    color: white;
+    /* text-shadow:
+        0 0 4px white,
+        0 0 8px white,
+        0 0 12px white,
+        0 0 16px white; */
+
 }
+/* @media (max-width: 600px) {
+  .text {
+    text-shadow:
+      0 0 1px white,
+      0 0 2px white,
+      0 0 3px white;
+  }
+} */
 
 .background-photo {
     min-height: 90dvh;
     overflow: hidden;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+
 }
 
 .bg-image {

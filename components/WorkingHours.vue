@@ -46,18 +46,18 @@ onMounted(() => {
 
 
 
-        <div class="justify-center d-flex text-center pa-8" style="background: white;">
+        <div class="justify-center d-flex text-center pa-8 " style="background: rgb(20,20,20); color: white;">
 
-            <div ref="card" class="card">
+            <div ref="card" class="card" style="padding-bottom: 64px;">
 
                 <div style="font-size: clamp(2.25rem, 1.3125rem + 3vw, 3rem); font-weight: 900;">
                     c 10.00 до 21.00
                 </div>
-                <v-divider color="black" opacity="1" :thickness="5">
+                <v-divider color="white" opacity="1" :thickness="5">
 
                 </v-divider>
                 <div style="font-size: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem); font-weight: 700; " ref="phone">
-                    <a style="color: black;" href="tel:+7 (999) 282-21-21"> +7 (999) 282-21-21</a>
+                    <a style="color: white;" href="tel:+7 (999) 282-21-21"> +7 (999) 282-21-21</a>
 
                 </div>
                  <!-- <div style="font-size: clamp(1.125rem, 0.8125rem + 1vw, 1.375rem); font-weight: 500;">
