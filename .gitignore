@@ -4,8 +4,9 @@
 .nuxt
 .nitro
 .cache
+.sh
 dist
-
+deploy.sh
 # Node dependencies
 node_modules
 

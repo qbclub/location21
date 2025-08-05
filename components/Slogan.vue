@@ -8,10 +8,10 @@
         <div class="background-photo">
             <img src="../assets/images/background.jpg" class="bg-image" />
 
-            <v-row class="ma-0 fill-height">
+            <v-row class="ma-0">
 
                 <v-col cols="12" md="4" class="text-parent">
-                    <div class="text d-flex align-center align-md-start">
+                    <div class="text d-flex text-center justify-center align-center h-100">
 
                         Мы уважаем стиль, как
                         Буковский, любим его
@@ -22,18 +22,19 @@
                 </v-col>
                 <v-col cols="12" md="4" class="text-parent
 ">
-                    <div class="text d-flex align-center">
+                    <div class="text d-flex text-center justify-center align-center h-100">
                         Мы уважаем вас и хотим
                         окружить домашним
                         уютом.
                     </div>
                 </v-col>
                 <v-col cols="12" md="4" class="text-parent">
-                    <div class="text d-flex align-center align-md-end">
+                    <div class="text d-flex text-center justify-center align-center h-100">
                         Мы постоянно
                         самосовершенствуемся,
                         чтобы вопрос качества
-                        никогда не поднимался. </div>
+                        никогда не поднимался. 
+                    </div>
                 </v-col>
             </v-row>
         </div>
@@ -43,34 +44,18 @@
 <style scoped>
 .text {
     font-size: clamp(1.25rem, 0.9375rem + 1vw, 1.5rem);
-    font-weight: 900;
-    min-height: 150px;
-    padding: 30px;
-    height: 100%;
+    font-weight: 500;
     width: 100%;
-    text-align: center;
     color: white;
-    /* text-shadow:
-        0 0 4px white,
-        0 0 8px white,
-        0 0 12px white,
-        0 0 16px white; */
-
+    background-color: rgba(20,20,20, 0.7);
+    padding: 10px;
 }
-/* @media (max-width: 600px) {
-  .text {
-    text-shadow:
-      0 0 1px white,
-      0 0 2px white,
-      0 0 3px white;
-  }
-} */
+
 
 .background-photo {
     min-height: 90dvh;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+ 
 
 }
 
